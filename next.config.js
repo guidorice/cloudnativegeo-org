@@ -10,4 +10,5 @@ module.exports = module.exports = {
     })
     return configuration
   },
+  images: { unoptimized: true }
 };
