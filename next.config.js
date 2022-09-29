@@ -1,14 +1,7 @@
-/** @type {import('next').NextConfig} */
+const withMarkdoc = require('@markdoc/next.js');
+const markdocOptions = { mode: 'static' };
 
-module.exports = module.exports = {
-  reactStrictMode: true,
-  swcMinify: true,
-  webpack: (configuration) => {
-    configuration.module.rules.push({
-      test: /\.md$/,
-      use: 'frontmatter-markdown-loader',
-    })
-    return configuration
-  },
-  images: { unoptimized: true }
-};
+module.exports =
+  withMarkdoc(/* config: https://markdoc.io/docs/nextjs#options */)({
+    pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdoc'],
+  });

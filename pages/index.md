@@ -1,8 +1,13 @@
+---
+title: Cloud Native Geospatial
+description:  TODO cloudnativegeo
+---
+
 # Full Next.js example
 
+{% callout %}
 This is a full-featured boilerplate for a creating a documentation website using Markdoc and Next.js.
-
-<img width="2032" alt="image" src="https://user-images.githubusercontent.com/62121649/174916143-16f18270-0463-402c-8b48-33c627ea7a7e.png">
+{% /callout %}
 
 ## Setup
 
@@ -37,3 +42,4 @@ The quickest way to deploy your own version of this boilerplate is by deploying 
 ### Deploy to Netlify
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markdoc/next.js-starter)
+
