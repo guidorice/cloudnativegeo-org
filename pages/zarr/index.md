@@ -10,8 +10,9 @@ description: Zarr excels at storage of large N-dimensional typed arrays on the
 
 {% $markdoc.frontmatter.description %}
 
-## Subhead1
+## Python example
 
-## Subhead2
-
-{% script src="/example.js" /%}
+```python
+z1 = zarr.open('data/example.zarr', mode='w', shape=(10000, 10000),
+                chunks=(1000, 1000), dtype='i4')
+```
