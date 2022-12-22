@@ -14,12 +14,12 @@ The overall goal is to leverage the cloud to radically simplify the effort
 needed to make location information
 [Findable, Accessible, Interoperable, and Reusable (FAIR)](https://www.ogc.org/about).
 
-[![COG](/images/cog_200.png)](./cog/)
+[![COG](/images/cog_200.png)](/cog)
 
-[![COPC](/images/copc_200.png)](./copc/)
+[![COPC](/images/copc_200.png)](/copc)
 
-[![GeoParquet](/images/parquet_200.png)](./geoparquet/)
+[![GeoParquet](/images/parquet_200.png)](/geoparquet)
 
-[![STAC](/images/stac_200.png)](./stac/)
+[![STAC](/images/stac_200.png)](/stac)
 
-[![Zarr](/images/zarr_200.png)](./zarr/)
+[![Zarr](/images/zarr_200.png)](/zarr)
