@@ -4,8 +4,16 @@ import Link from 'next/link';
 
 const items = [
   {
-    title: 'Get started',
-    links: [{href: '/docs', children: 'Overview'}],
+    title: 'CNG',
+    links: [
+      { href: '/', children: 'Home' },
+      { href: '/cog', children: 'COG' },
+      { href: '/copc', children: 'COPC' },
+      { href: '/geoparquet', children: 'GeoParquet' },
+      { href: '/mallard', children: 'Mallard' },
+      { href: '/stac', children: 'STAC' },
+      { href: '/zarr', children: 'Zarr' },
+    ],
   },
 ];
 

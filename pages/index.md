@@ -1,45 +1,25 @@
 ---
-title: Cloud Native Geospatial
-description:  TODO cloudnativegeo
+title: Cloud-Native Geospatial
+description:  Cloud-Native Geospatial is a new way of working with spatial
+    data that is centered around a set of new standards focused on cloud-based access. 
 ---
 
-# Full Next.js example
+# {% $markdoc.frontmatter.title %}
 
-{% callout %}
-This is a full-featured boilerplate for a creating a documentation website using Markdoc and Next.js.
-{% /callout %}
+{% $markdoc.frontmatter.description %}
 
-## Setup
+On top of these standards are a rapidly growing ecosystem of innovative tools,
+data and workflows that are enabling a number of incredible new capabilities.
+The overall goal is to leverage the cloud to radically simplify the effort
+needed to make location information
+[Findable, Accessible, Interoperable, and Reusable (FAIR)](https://www.ogc.org/about).
 
-First, clone this repo and install the dependencies required:
+[![COG](/images/cog_200.png)](./cog/)
 
-```bash
-npm install
-# or
-yarn install
-```
+[![COPC](/images/copc_200.png)](./copc/)
 
-Then, run the development server:
+[![GeoParquet](/images/parquet_200.png)](./geoparquet/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+[![STAC](/images/stac_200.png)](./stac/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `index.md`. The page auto-updates as you edit the file.
-
-## Deploy
-
-The quickest way to deploy your own version of this boilerplate is by deploying it with [Vercel](https://vercel.com) or [Netlify](https://www.netlify.com/) by clicking one of the buttons below.
-
-### Deploy with Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/markdoc/next.js-starter)
-
-### Deploy to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markdoc/next.js-starter)
-
+[![Zarr](/images/zarr_200.png)](./zarr/)

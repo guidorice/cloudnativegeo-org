@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
-import { SideNav, TableOfContents, TopNav } from '../components';
+import { SideNav, TableOfContents } from '../components';
 
 import 'prismjs';
 
@@ -10,6 +10,7 @@ import 'prismjs';
 import 'prismjs/components/prism-bash.min';
 import 'prismjs/components/prism-python.min';
 import 'prismjs/components/prism-typescript.min';
+import 'prismjs/components/prism-json';
 import 'prismjs/components/prism-shell-session';
 
 import 'prismjs/themes/prism.css';
@@ -19,8 +20,10 @@ import '../public/globals.css';
 import type { AppProps } from 'next/app';
 import type { MarkdocNextJsPageProps } from '@markdoc/next.js';
 
-const TITLE = 'Markdoc';
-const DESCRIPTION = 'A powerful, flexible, Markdown-based authoring framework';
+// default title, description will be used if the title, description are not
+// specified in the front-matter
+const TITLE = 'Cloud-Native Geospatial';
+const DESCRIPTION = 'Cloud-Native Geospatial is a new way of working with spatial data that is centered around a set of new standards focused on cloud-based access. ';
 
 function collectHeadings(node, sections = []) {
   if (node) {
@@ -76,9 +79,6 @@ export default function MyApp({ Component, pageProps }: AppProps<MyAppProps>) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TopNav>
-        <Link href="/stac">STAC</Link>
-      </TopNav>
       <div className="page">
         <SideNav />
         <main className="flex column">
@@ -89,15 +89,12 @@ export default function MyApp({ Component, pageProps }: AppProps<MyAppProps>) {
       <style jsx>
         {`
           .page {
-            position: fixed; 
-            top: var(--top-nav-height);
             display: flex;
             width: 100vw;
             flex-grow: 1;
           }
           main {
             overflow: auto;
-            height: calc(100vh - var(--top-nav-height));
             flex-grow: 1;
             font-size: 16px;
             padding: 0 2rem 2rem;

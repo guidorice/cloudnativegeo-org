@@ -1,8 +1,10 @@
 ---
 title: Zarr
 description: Zarr excels at storage of large N-dimensional typed arrays on the
-    cloud, and is used extensively for climate and weather modeling
+    cloud, and is used extensively for climate and weather modeling.
 ---
+
+![zarr](/images/zarr_200.png)
 
 # {% $markdoc.frontmatter.title %}
 
