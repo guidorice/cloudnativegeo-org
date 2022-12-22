@@ -10,4 +10,4 @@
     * No effort spent on styling or layouting
 - [x] Explored some ideas for "Headless CMS"
 - [x] Created a custom React component as a new markdown tag.
-- [x] Tested out Netlify's debploy previews feature.
+- [x] Tested out Netlify's deploy preview feature.
