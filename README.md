@@ -2,7 +2,7 @@
 
 ## using [Next.js](https://nextjs.org/), [Markdoc](https://markdoc.dev/), and [Netlify](https://www.netlify.com/)
 
-- [x] Started from https://github.com/markdoc/next.js-starter
+- [x] Started from https://github.com/markdoc/markdoc-starter
 - [x] Deployed to Netlify using GitHub integration
     * Next.js is being used in the simplest possible way, basically as a static site generator (SSG).
 - [x] Added custom domain with SSL/TLS https://cloudnative.ricegeo.dev/
