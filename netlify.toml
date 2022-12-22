@@ -1,6 +1,19 @@
 # Netlify file-based configuration
 #   https://docs.netlify.com/configure-builds/file-based-configuration/
 
+# Using Next.js as a Static Site Generator (SSG):
+# * There is a Next.js runtime/integration https://docs.netlify.com/integrations/frameworks/next-js/overview/
+# * But here only using the runtime plugin to leverage the build caching.
+# * Not using SSR, On demand, hybrid rendering, APIs, or other Next.js runtime features.
+# * https://github.com/netlify/next-runtime/tree/main/demos/next-export
+
 [build]
-  publish = "out/"
-  command = "npm run build"
+command = "next build && next export"
+publish = "out"
+ignore = "if [ $CACHED_COMMIT_REF == $COMMIT_REF ]; then (exit 1); else git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ../..; fi;"
+
+[build.environment]
+NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
