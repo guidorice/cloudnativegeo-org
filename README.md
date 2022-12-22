@@ -5,7 +5,7 @@
 - [x] Started from https://github.com/markdoc/markdoc-starter
 - [x] Deployed to Netlify using GitHub integration
     * Next.js is being used in the simplest possible way, basically as a static site generator (SSG).
-- [x] Added custom domain with SSL/TLS https://cloudnative.ricegeo.dev/
+- [x] Added custom domain with SSL/TLS https://cloudnative.ricegeo.dev
 - [x] Added minimal amount of content for a possible Cloud-Native Geospatial site
     * No effort spent on styling or layouting
 - [x] Explored some ideas for "Headless CMS"
