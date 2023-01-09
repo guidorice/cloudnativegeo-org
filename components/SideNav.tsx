@@ -13,6 +13,7 @@ const items = [
       { href: '/mallard', children: 'Mallard' },
       { href: '/stac', children: 'STAC' },
       { href: '/zarr', children: 'Zarr' },
+      { href: '/hello_world', children: 'Hello' },
     ],
   },
 ];
