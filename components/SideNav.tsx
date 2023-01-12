@@ -14,7 +14,8 @@ const items = [
       { href: '/stac', children: 'STAC' },
       { href: '/zarr', children: 'Zarr' },
       { href: '/hello_world', children: 'Hello' },
-    ],
+      { href: '/tech-team', children: 'Tech Team' },
+      ],
   },
 ];
 
